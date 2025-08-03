@@ -2,12 +2,16 @@
   "name": "WSO2 MI Browser Environment",
   "image": "mcr.microsoft.com/devcontainers/java:17",
   "features": {
-    "ghcr.io/devcontainers/features/maven:1": {}
+    "ghcr.io/devcontainers/features/maven:1": {
+      "version": "3.9.4"
+    }
   },
   "postCreateCommand": "./setup-wso2mi.sh",
   "customizations": {
     "vscode": {
-      "extensions": ["wso2.micro-integrator"]
+      "extensions": [
+        "wso2.micro-integrator"
+      ]
     }
   }
 }
